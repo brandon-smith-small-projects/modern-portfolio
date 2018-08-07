@@ -10,12 +10,12 @@
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
       transform: rotate(-45deg) translate(-5px, 10px);
-      background: #eece1a; }
+      background: teal; }
     .menu-btn.close .btn-line:nth-child(2) {
       display: none; }
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(45deg) translate(4px, -1px);
-      background: #eece1a; }
+      background: teal; }
 
 .btn-line {
   width: 28px;
@@ -61,7 +61,7 @@
       width: 250px;
       height: 250px;
       background: url("../img/portrait.jpg");
-      border: solid 3px #eece1a;
+      border: solid 3px teal;
       border-radius: 50%; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
@@ -69,7 +69,7 @@
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: teal; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -81,7 +81,7 @@
     color: #fff;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: teal; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -145,7 +145,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: teal; }
 
 main {
   padding: 4rem;
@@ -155,7 +155,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: teal;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -171,7 +171,7 @@ main {
     grid-area: bio-image;
     margin: auto;
     border-radius: 50%;
-    border: solid 3px #eece1a; }
+    border: solid 3px teal; }
   .about-info .bio {
     font-size: 1.5rem;
     grid-area: bio; }
@@ -184,7 +184,7 @@ main {
   .about-info .job {
     background: #404040;
     padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    border-bottom: teal 5px solid; }
 
 .projects {
   display: grid;
@@ -195,10 +195,29 @@ main {
     border: 3px solid #fff; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #eece1a;
+      border-color: teal;
       transition: all 0.5s ease-out; }
   .projects i {
     margin-right: 5px; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      background: teal;
+      color: #fff; }
+      .boxes div:hover span {
+        color: #fff; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -207,7 +226,7 @@ main {
   margin-bottom: 0.3rem;
   text-align: center; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
+    background: teal;
     color: #fff; }
 
 .btn-dark {
