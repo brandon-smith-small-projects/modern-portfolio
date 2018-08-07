@@ -186,12 +186,52 @@ main {
     padding: 0.5rem;
     border-bottom: #eece1a 5px solid; }
 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7rem; }
+  .projects img {
+    width: 100%;
+    border: 3px solid #fff; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #eece1a;
+      transition: all 0.5s ease-out; }
+  .projects i {
+    margin-right: 5px; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  text-align: center; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #eece1a;
+    color: #fff; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #b3b3b3;
+  color: #333; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
   background: #1a1a1a;
   color: #fff;
   height: 60px; }
+
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -221,9 +261,13 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    display: block; } }
+    display: block; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh;
-    font-size: 4rem; } }
+    font-size: 4rem; }
+  .projects {
+    grid-template-columns: 1fr; } }
